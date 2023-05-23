@@ -4,16 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>연습문제 2</title>
-	<style>	
+	<style>
 		#container {
 			width:200px;
 			margin:30px auto;
+			perspective: 120px;
 		}
-    img {
-      border:1px solid #ccc;
-      border-radius:50%;      
-      box-shadow: 5px 5px 30px 2px #000;
-    }
+		img {
+			border:1px solid #ccc;
+			border-radius:50%;
+			box-shadow: 5px 5px 30px 2px #000;
+			animation: spin 1s;
+		}
+		@keyframes spin{
+			from{transform: rotateY(0deg);}
+			50%{transform: rotateY(180deg);}
+			to{transform: rotateY(360deg);}
+
+		}
+
 	</style>
 </head>
 
