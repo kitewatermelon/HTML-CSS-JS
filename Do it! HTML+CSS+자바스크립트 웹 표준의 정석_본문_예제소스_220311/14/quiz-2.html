@@ -9,9 +9,27 @@
 			font-size:1.2em;
 			text-align:center;
 		}
+		p {
+			color:#f00;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		var i;
+		var cnt = 0;
+		var n = prompt("몇 까지의 3의 배수를 찾을까요?");
+		if(n !== null){
+			for(i = 3 ; i <= n ; i++){
+				if(i % 3 === 0){
+					document.write(i+", ");
+					cnt++;
+				}
+			}
+			document.write("<br><br><p>" + n + "까지의 3의 배수의 개수 : " + cnt + "</p>" );
+		}
+	</script>
 </body>
 </html>
