@@ -3,9 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>연습문제 2</title>
+	<title>연습문제 2(성공~~~)</title>
 </head>
 <body>
-	
+	<script>
+		function compare(n1,n2) {
+			if(n1 === n2 )
+				alert("같습니다.");
+			else if(n1 > n2)
+				alert(`${n1}(이)가 ${n2}보다 큽니다.`);
+
+			else if(n1 < n2)
+				alert(`${n2}(이)가 ${n1}보다 큽니다.`);
+		}
+
+		let num1 = prompt("비교할 첫 번째 숫자:");
+		let num2 = prompt("비교할 두 번째 숫자:");
+		compare(num1,num2);
+	</script>
 </body>
 </html>
